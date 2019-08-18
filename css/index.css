@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 blockquote, q {
@@ -49,15 +49,16 @@ table {
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 10px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -65,7 +66,41 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
+/* Header */
+#mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-flow: row wrap;
+}
+#headerLogoContainer {
+    width: 20%;
+    margin: 30px 0 30px 0;
+}
+#mainNav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+#mainUl {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+}
+.mainLis {
+    padding: 0 10px;
+    display: flex;
+    align-items: flex-end;
+}
+.mainAnchorLinks {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+#mainHeaderImageContainer {
+    width: 100%;
+}
 .container {
     width: 800px;
     margin: 0 auto;
@@ -75,14 +110,23 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border-bottom: 1px dashed black;
+    /* margin-top: 20px; */
+    margin: 20px 0;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+}
+.text-container h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.text-container p {
+    font-size: 1.6rem;
 }
 
 .middle-content {
@@ -93,12 +137,45 @@ p {
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
+
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.middle-content .boxes .box.one {
+    background: teal;
+}
+.middle-content .boxes .box.two {
+    background: gold;
+}
+.middle-content .boxes .box.three {
+    background: cadetblue;
+}
+.middle-content .boxes .box.four {
+    background: coral;
+}
+.middle-content .boxes .box.five {
+    background: crimson;
+}
+.middle-content .boxes .box.six {
+    background: forestgreen;
+}
+.middle-content .boxes .box.seven {
+    background: darkorchid;
+}
+.middle-content .boxes .box.eight {
+    background: hotpink;
+}
+.middle-content .boxes .box.nine {
+    background: indigo;
+}
+.middle-content .boxes .box.ten {
+    background: dodgerblue;
 }
 
 .middle-content .boxes .box {
@@ -110,6 +187,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .bottom-content {
@@ -144,3 +223,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* Dylan Style Changes --- Sprint Challenge */
