@@ -124,6 +124,7 @@ p {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    margin-top: 15px;
 }
 .textContentContainer {
     margin: 0 20px;
@@ -136,6 +137,9 @@ p {
     font-weight: 600;
     width: 100%;
     margin: 15px 0;
+}
+.text-container h2 {
+    margin-top: 0;
 }
 .text-container p,
 .containerAboutInformation .containerText,
