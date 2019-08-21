@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 blockquote, q {
@@ -49,40 +49,103 @@ table {
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 10px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
 }
-
+/* Header */
+#mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-flow: row wrap;
+}
+#headerLogoContainer {
+    width: 20%;
+    margin: 30px 0 30px 0;
+}
+#mainNav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+#mainUl {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+}
+.mainLis {
+    padding: 0 10px;
+    display: flex;
+    align-items: flex-end;
+}
+.mainAnchorLinks {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+#mainHeaderImageContainer {
+    width: 100%;
+}
 .container {
     width: 800px;
     margin: 0 auto;
 }
 
-.top-content {
+.top-content,
+.containerAboutInformation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border-bottom: 1px dashed black;
+    /* margin-top: 20px; */
+    /* margin: 20px 0; */
+}
+.containerAboutInformation {
+    margin: 0 20px;
+    padding-bottom: 2%;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+    margin-top: 15px;
+}
+.textContentContainer {
+    margin: 0 20px;
+}
+.text-container h2,
+.middle-content h2,
+.servicesContainer .containerHeading,
+.containerAboutInformation .containerHeading  {
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+    margin: 15px 0;
+}
+.text-container h2 {
+    margin-top: 0;
+}
+.text-container p,
+.containerAboutInformation .containerText,
+.servicesContainer .containerText {
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .middle-content {
@@ -93,12 +156,45 @@ p {
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
+
 
 .middle-content .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.middle-content .boxes .box.one {
+    background: teal;
+}
+.middle-content .boxes .box.two {
+    background: gold;
+}
+.middle-content .boxes .box.three {
+    background: cadetblue;
+}
+.middle-content .boxes .box.four {
+    background: coral;
+}
+.middle-content .boxes .box.five {
+    background: crimson;
+}
+.middle-content .boxes .box.six {
+    background: forestgreen;
+}
+.middle-content .boxes .box.seven {
+    background: darkorchid;
+}
+.middle-content .boxes .box.eight {
+    background: hotpink;
+}
+.middle-content .boxes .box.nine {
+    background: indigo;
+}
+.middle-content .boxes .box.ten {
+    background: dodgerblue;
 }
 
 .middle-content .boxes .box {
@@ -110,6 +206,8 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .bottom-content {
@@ -125,7 +223,44 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* Services on About Page */
+#servicesSection {
+    margin: 0 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.servicesContainer {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    border-bottom: 1px dashed #000;
+}
+.servicesContainer:nth-child(odd) {
+    margin-left: 0;
+}
+.servicesContainer:nth-child(even) {
+    margin-right: 0;
+    margin-left: 0;
+}
+.containerHeading {
+    margin: 15px 0;
+}
+.callToActionContainer {
+    margin: 30px 0 30px;
+}
+.callToAction {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 6px 20px;
+    color: #000;
+    font-size: 1.8rem;
+}
+#letsWorkTogetherSection .containerAboutInformation {
+    padding-bottom: 40px;
+    border-bottom: none;
+}
 footer {
     width: 100%;
     background: black;
@@ -144,3 +279,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* Dylan Style Changes --- Sprint Challenge */
